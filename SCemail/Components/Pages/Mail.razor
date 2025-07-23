@@ -37,8 +37,18 @@
                 </div>
             </td>
             <td style="width:20%; height:100vh; background-color: #E3EEFB; vertical-align:top; text-align:right;">
-                <div style="padding:10px;">
-                    <button @onclick="ConfiguraClicked">Configura</button>
+                <div style="padding:10px; text-align:right">
+                    <table style="text-align:right">
+                        <tr style="text-align:right">
+                            <td style="text-align:right"><button @onclick="ConfiguraClicked1">Configura Caselle EMail</button></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right"><button @onclick="ConfiguraClicked2">Abilitazioni Utenti</button></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right"><button @onclick="ConfiguraClicked3">Regole di Gestione</button></td>
+                        </tr>
+                    </table>                   
                 </div>
             </td>
         </tr>
@@ -46,9 +56,19 @@
 </div>
 
 @code {
-    private void ConfiguraClicked()
+    private void ConfiguraClicked1()
     {
-        Navigation.NavigateTo("/mailconfigurazione");
+        Navigation.NavigateTo("/configurazione");
+    }
+
+    private void ConfiguraClicked2()
+    {
+        Navigation.NavigateTo("/abilitazioni");
+    }
+
+    private void ConfiguraClicked3()
+    {
+        Navigation.NavigateTo("/regole");
     }
 }
 

@@ -1,4 +1,4 @@
-﻿@page "/mailconfigurazione"
+﻿@page "/configurazione"
 @rendermode InteractiveServer
 @inject NavigationManager Navigation
 
@@ -20,12 +20,16 @@
                         </tr>
                     </table>
                 </div>
-
                 <div style="padding:10px; border-right: 1px solid #CCCCCC; height:100vh;">
                     <table style="width:100%; border: 2px ridge #166AEE; background-color: #ECE9D8;">
                         <tr>
-                            <td style="height:300px; vertical-align:top; text-align:left;">
+                            <td style="text-align:left;">
                                 <button @onclick="GoBack">Indietro</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height:300px; vertical-align:top; text-align:justify">
+                                Indirizzo EMail - Tipo: es. GMail/Aruba - Password - Test: Invio/Ricezione
                             </td>
                         </tr>
                     </table>
